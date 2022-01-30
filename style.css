@@ -1,0 +1,218 @@
+.coinBox {
+    border: 1px solid rgb(139, 137, 137);
+    display: inline-block;
+    width: 240px;
+    height: 200px;
+    padding: 5px;
+    text-align: left;
+    border-radius: 3px;
+    background-color: white
+
+}
+
+/* nav button */
+.nav {
+    margin: 10px;
+    width: 200px;
+}
+
+/* coinbox wrapper */
+.wraper {
+    display: inline-block;
+    width: 260px;
+    height: 210px;
+    margin: 10px;
+    align-items: center;
+}
+
+/* fieldss in coinBox */
+.coinBox > div  {
+    width: 150px;
+    height: 40px;
+    margin: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0px;
+} 
+
+/* toggle button */
+.toggDiv > span {
+    float: right;
+    padding: 7px;
+}
+
+/* last updated prices */
+.currPrice > span {
+    color: maroon;
+    font-size: smaller;
+    font-style: italic;
+}
+
+body {
+    text-align: center;
+    background: url(/media/back.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#navDiv {
+    display: inline-flex;
+    align-items: center;
+    height: 80px;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.search{
+    position: relative;
+    display: block;
+width: 100px;
+float: right;
+}
+/* crypto  */
+#headerDiv > h1{
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    font-family: "Lucida Sans Unicode";
+    background-image: linear-gradient(45deg, grey, black);
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+}
+
+.modal-header > p {
+position: relative;
+left: 10px;
+padding: 10px;
+}
+
+
+
+
+
+
+
+.modalBody {
+    text-align: left;
+}
+
+.prices {
+    display: flex;
+}
+
+
+ /* Toggle Button / Slider : */
+ .toggButt {
+     position: absolute;
+     display: inline-block;
+   
+ }
+
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+      border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+    
+  }
+  
+  /* coin toggle Modal  */
+  input[type="radio"] {
+ margin: 10px;
+  }
+
+  /* loader - not workin' */
+  #loader1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 750px;
+    height: 750px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+/* about */
+.aboutPhoto {
+    width: 500px;
+    height: 370px;
+    border: 5px solid white;
+}
+
+.about h5, .about h4 {
+    color: wheat;
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    left: 25%;
+    position: relative;
+}

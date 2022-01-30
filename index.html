@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JQuery -->
+    <script src="jquery-3.5.1.js"></script>
+    <!-- javaScript -->
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="headerDiv">
+        <h1>Cryptonite</h1>
+    </div>
+    <div id="navDiv">
+        <div class="btn-group btn-group-lg" role="group">
+            <button class="btn btn-primary nav" type="button" id="coinsButton">Coins</button>
+            <button class="btn btn-primary nav" type="button" id="reportsButton">Live Reports</button>
+            <button class="btn btn-primary nav" type="button" id="aboutButton">about</button>
+        </div>
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control search" placeholder="Enter Coin Symbol" aria-label="Username"
+                aria-describedby="basic-addon1" id="searchInput">
+            <button class="btn btn-info btn-lg" id="searchBtn">Search</button>
+        </div>
+    </div>
+    <br>
+    
+    <div id="containerDiv"></div>
+    <div id="containerResult"></div>
+    <div id="containerAbout" class="about" style="display: none;">
+        <h4>Hello I'm Ben Kurt And I Approve This Webpage. I Also Build It. I'm Ben Kurt.</h4>
+        <img src="/media/meAndMaFuends.JPG" class="aboutPhoto" alt="no-pic-available">
+        <h5>Click on Coins tab to get cryptocurrency prices and much more!</h5>
+    </div>
+    <div id="containerBonusNotHappening"></div>
+
+
+    <div id="footerDiv"></div>
+
+    <!-- Modal for toggle selection -->
+    <div class="modal" tabindex="-1" id="togMod">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="togModHeader">Allowed only 5 coins. Select one to remove</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="togModBody">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="togModClose">Close</button>
+                    <button type="button" class="btn btn-primary" id="togModSave" onclick="removeCoin()">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for More Info -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader">
+                    <img id="modalImg" src="" alt="">
+                    <p></p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <div id="loader1" ></div>
+
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
